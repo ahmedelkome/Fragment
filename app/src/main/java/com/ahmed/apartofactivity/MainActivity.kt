@@ -24,10 +24,9 @@ class MainActivity : AppCompatActivity() {
         names.add(Name("sasa"))
         names.add(Name("abdo"))
 
-        var listAdapter = NameAdapter(names)
-        rv.adapter = listAdapter
+        val listAdapter = NameAdapter(names)
         rv.layoutManager = LinearLayoutManager(this)
-
+        rv.adapter = listAdapter
 
 
     }
