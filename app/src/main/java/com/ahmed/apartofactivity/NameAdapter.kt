@@ -43,7 +43,7 @@ class NameAdapter : RecyclerView.Adapter<NameAdapter.NameHolder> {
     }
 
 
-   inner class NameHolder : RecyclerView.ViewHolder  {
+    inner  class NameHolder : RecyclerView.ViewHolder  {
         private var tv_name: TextView
         lateinit var name: Name
         constructor(itemview: View) : super(itemview) {
