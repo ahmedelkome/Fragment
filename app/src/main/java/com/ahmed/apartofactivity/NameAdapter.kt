@@ -18,7 +18,7 @@ class NameAdapter : RecyclerView.Adapter<NameAdapter.NameHolder> {
 
 
 
-    constructor(Names: ArrayList<Name>, listener: OnClickListener) : super() {
+    constructor(Names: ArrayList<Name>, listener: OnClickListener){
         this.listener = listener
         this.Names = Names
     }
@@ -52,7 +52,6 @@ class NameAdapter : RecyclerView.Adapter<NameAdapter.NameHolder> {
                 listener.onItemClickListener(name)
             }
         }
-
 
         fun bind(name: Name) {
             this.name = name
